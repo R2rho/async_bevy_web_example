@@ -21,7 +21,7 @@ thiserror = "1"
 tracing = { version = "0.1", optional = true }
 http = "1"
 
-bevy = {version = "0.13.0",default-features = false, features=["dynamic_linking"]}
+bevy = {version = "0.13.0",default-features = false}
 async-bevy-web = { git = "https://github.com/vertec-io/async_bevy_web", branch = "main" }
 
 

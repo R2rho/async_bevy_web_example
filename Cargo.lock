@@ -66,7 +66,7 @@ checksum = "f538837af36e6f6a9be0faa67f9a314f8119e4e4b5867c6ab40ed60360142519"
 [[package]]
 name = "async-bevy-web"
 version = "0.1.0"
-source = "git+https://github.com/vertec-io/async_bevy_web?branch=main#810cced7ca5d9b2b3b3bed50b097a9c8b6fc47e8"
+source = "git+https://github.com/vertec-io/async_bevy_web?branch=main#d09432f9b4f47f8b76f300279d4f7f6ac70c7ca8"
 dependencies = [
  "axum",
  "bevy",
@@ -291,14 +291,13 @@ version = "0.13.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "65b9eadaacf8fe971331bc3f250f35c18bc9dace3f96b483062f38ac07e3a1b4"
 dependencies = [
- "bevy_dylib",
  "bevy_internal",
 ]
 
 [[package]]
 name = "bevy-tokio-tasks"
 version = "0.13.0"
-source = "git+https://github.com/vertec-io/async_bevy_web?branch=main#810cced7ca5d9b2b3b3bed50b097a9c8b6fc47e8"
+source = "git+https://github.com/vertec-io/async_bevy_web?branch=main#d09432f9b4f47f8b76f300279d4f7f6ac70c7ca8"
 dependencies = [
  "bevy_app",
  "bevy_ecs",
@@ -376,15 +375,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "bevy_dylib"
-version = "0.13.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "922826e3b8f37c19836b49e18ceca662260cce87ab8faa4db6df8433903660cc"
-dependencies = [
- "bevy_internal",
-]
-
-[[package]]
 name = "bevy_ecs"
 version = "0.13.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -419,7 +409,7 @@ dependencies = [
 [[package]]
 name = "bevy_framepace"
 version = "0.15.0"
-source = "git+https://github.com/vertec-io/async_bevy_web?branch=main#810cced7ca5d9b2b3b3bed50b097a9c8b6fc47e8"
+source = "git+https://github.com/vertec-io/async_bevy_web?branch=main#d09432f9b4f47f8b76f300279d4f7f6ac70c7ca8"
 dependencies = [
  "bevy_app",
  "bevy_diagnostic",
@@ -2595,9 +2585,9 @@ checksum = "a7065abeca94b6a8a577f9bd45aa0867a2238b74e8eb67cf10d492bc39351394"
 
 [[package]]
 name = "sysinfo"
-version = "0.30.10"
+version = "0.30.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "26d7c217777061d5a2d652aea771fb9ba98b6dade657204b08c4b9604d11555b"
+checksum = "87341a165d73787554941cd5ef55ad728011566fe714e987d1b976c15dbc3a83"
 dependencies = [
  "cfg-if",
  "core-foundation-sys",
@@ -2718,7 +2708,7 @@ dependencies = [
  "serde",
  "serde_spanned",
  "toml_datetime",
- "toml_edit 0.22.9",
+ "toml_edit 0.22.10",
 ]
 
 [[package]]
@@ -2743,9 +2733,9 @@ dependencies = [
 
 [[package]]
 name = "toml_edit"
-version = "0.22.9"
+version = "0.22.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8e40bb779c5187258fd7aad0eb68cb8706a0a81fa712fbea808ab43c4b8374c4"
+checksum = "c7a2b38d85c01ba55107d028a28ad5bc078e01a516fd9b7d9140bd84f6c39ee4"
 dependencies = [
  "indexmap",
  "serde",
@@ -3121,7 +3111,7 @@ dependencies = [
 [[package]]
 name = "web-server"
 version = "0.1.0"
-source = "git+https://github.com/vertec-io/async_bevy_web?branch=main#810cced7ca5d9b2b3b3bed50b097a9c8b6fc47e8"
+source = "git+https://github.com/vertec-io/async_bevy_web?branch=main#d09432f9b4f47f8b76f300279d4f7f6ac70c7ca8"
 dependencies = [
  "axum",
  "axum-extra",
