@@ -1,0 +1,27 @@
+[package]
+name = "main"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+app = {path = "../app", default-features = false, features = ["ssr"]}
+leptos = {workspace = true, features = ['ssr']}
+async-bevy-web = {workspace = true, features = []}
+bevy.workspace = true
+
+# axum = { version = "0.7", optional = true }
+console_error_panic_hook = "0.1"
+# leptos = { version = "0.6", features = ["nightly"] }
+# leptos_axum = { version = "0.6", optional = true }
+# leptos_meta = { version = "0.6", features = ["nightly"] }
+# leptos_router = { version = "0.6", features = ["nightly"] }
+# tokio = { version = "1", features = ["rt-multi-thread"], optional = true }
+# tower = { version = "0.4", optional = true }
+# tower-http = { version = "0.5", features = ["fs"], optional = true }
+# wasm-bindgen = "=0.2.92"
+# thiserror = "1"
+# tracing = { version = "0.1", optional = true }
+# http = "1"
+
+# bevy = {version = "0.13.0",default-features = false, optional = true}
+# async-bevy-web = { git = "https://github.com/vertec-io/async_bevy_web", branch = "main" , optional = true}

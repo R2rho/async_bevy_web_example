@@ -66,7 +66,7 @@ checksum = "f538837af36e6f6a9be0faa67f9a314f8119e4e4b5867c6ab40ed60360142519"
 [[package]]
 name = "async-bevy-web"
 version = "0.1.0"
-source = "git+https://github.com/vertec-io/async_bevy_web?branch=main#d09432f9b4f47f8b76f300279d4f7f6ac70c7ca8"
+source = "git+https://github.com/vertec-io/async_bevy_web?branch=main#0f68c4b9775bc75a154424d1d289294b2943137e"
 dependencies = [
  "axum",
  "bevy",
@@ -297,7 +297,7 @@ dependencies = [
 [[package]]
 name = "bevy-tokio-tasks"
 version = "0.13.0"
-source = "git+https://github.com/vertec-io/async_bevy_web?branch=main#d09432f9b4f47f8b76f300279d4f7f6ac70c7ca8"
+source = "git+https://github.com/vertec-io/async_bevy_web?branch=main#0f68c4b9775bc75a154424d1d289294b2943137e"
 dependencies = [
  "bevy_app",
  "bevy_ecs",
@@ -409,7 +409,7 @@ dependencies = [
 [[package]]
 name = "bevy_framepace"
 version = "0.15.0"
-source = "git+https://github.com/vertec-io/async_bevy_web?branch=main#d09432f9b4f47f8b76f300279d4f7f6ac70c7ca8"
+source = "git+https://github.com/vertec-io/async_bevy_web?branch=main#0f68c4b9775bc75a154424d1d289294b2943137e"
 dependencies = [
  "bevy_app",
  "bevy_diagnostic",
@@ -3111,7 +3111,7 @@ dependencies = [
 [[package]]
 name = "web-server"
 version = "0.1.0"
-source = "git+https://github.com/vertec-io/async_bevy_web?branch=main#d09432f9b4f47f8b76f300279d4f7f6ac70c7ca8"
+source = "git+https://github.com/vertec-io/async_bevy_web?branch=main#0f68c4b9775bc75a154424d1d289294b2943137e"
 dependencies = [
  "axum",
  "axum-extra",

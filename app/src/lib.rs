@@ -29,7 +29,7 @@ pub fn MyApp() -> impl IntoView {
         }>
             <main>
                 <Routes>
-                    <Route path="/Home" view=HomePage/>
+                    <Route path="/" view=HomePage/>
                 </Routes>
             </main>
         </Router>
