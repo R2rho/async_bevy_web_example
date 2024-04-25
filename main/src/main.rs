@@ -16,7 +16,7 @@ fn main() {
 
 #[cfg(not(feature = "ssr"))]
 fn main() {
-    use example_abw_app_lib::app::*;
+    // use example_abw_app_lib::app::*;
     // Alternative main function for non-ssr features
     // println!("Non-SSR version does not have a server component.");
     // leptos::mount_to_body(MyApp)
