@@ -1,7 +1,9 @@
-use crate::error_template::{AppError, ErrorTemplate};
+use error_template::{AppError, ErrorTemplate};
 use leptos::*;
 use leptos_meta::*;
 use leptos_router::*;
+
+pub mod error_template;
 
 #[component]
 pub fn MyApp() -> impl IntoView {
@@ -40,11 +42,23 @@ pub fn MyApp() -> impl IntoView {
 #[component]
 fn HomePage() -> impl IntoView {
     // Creates a reactive value to update the button
+    // let (count, set_count) = create_signal(0);
+    // let on_click = move |_| set_count.update(|count| *count += 1);
+
+    view! {
+        <h1>"Welcome to Leptos!"</h1>
+        <Counter/>
+        // <button on:click=on_click>"Click Me: " {count}</button>
+    }
+}
+
+#[island]
+fn Counter() -> impl IntoView {
+    // Creates a reactive value to update the button
     let (count, set_count) = create_signal(0);
     let on_click = move |_| set_count.update(|count| *count += 1);
 
     view! {
-        <h1>"Welcome to Leptos!"</h1>
         <button on:click=on_click>"Click Me: " {count}</button>
     }
 }

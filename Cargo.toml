@@ -1,24 +1,13 @@
 [workspace]
 resolver = "2"
 members = ["app","frontend","main"]
-# name = "example-abw-app"
-# version = "0.1.0"
-# edition = "2021"
-
-# [lib]
-# crate-type = ["cdylib", "rlib"]
-# name="example_abw_app_lib"
 
 [workspace.dependencies]
-# axum = { version = "0.7", optional = true }
 console_error_panic_hook = "0.1"
 leptos = { version = "0.6", features = ["nightly", "experimental-islands"] }
 # leptos_axum = { version = "0.6", optional = true }
 leptos_meta = { version = "0.6", features = ["nightly"] }
 leptos_router = { version = "0.6", features = ["nightly"] }
-# tokio = { version = "1", features = ["rt-multi-thread"], optional = true }
-# tower = { version = "0.4", optional = true }
-# tower-http = { version = "0.5", features = ["fs"], optional = true }
 wasm-bindgen = "=0.2.92"
 thiserror = "1"
 tracing = { version = "0.1"}
@@ -26,21 +15,7 @@ http = "1"
 serde = { version = "1", features = ["derive"] }
 bevy = {version = "0.13.0",default-features = false}
 async-bevy-web = { git = "https://github.com/vertec-io/async_bevy_web", branch = "main" , features = ["ssr","hydrate"]} 
-# [features]
-# hydrate = ["leptos/hydrate", "leptos_meta/hydrate", "leptos_router/hydrate"]
-# ssr = [
-#     "dep:axum",
-#     "dep:tokio",
-#     "dep:tower",
-#     "dep:tower-http",
-#     "dep:leptos_axum",
-#     "dep:bevy",
-#     "dep:async-bevy-web",
-#     "leptos/ssr",
-#     "leptos_meta/ssr",
-#     "leptos_router/ssr",
-#     "dep:tracing",
-# ]
+
 
 
 # [workspace.metadata.cargo-all-features]
@@ -62,9 +37,9 @@ lto = true
 codegen-units = 1
 panic = "abort"
 
-[workspace.metadata.leptos]
+[[workspace.metadata.leptos]]
 # The name used by wasm-bindgen/cargo-leptos for the JS/WASM bundle. Defaults to the crate name
-output-name = "example-abw-app"
+name = "example-abw-app"
 
 # the package in the workspace that contains the generator binary (binary crate)
 bin-package = "main"
@@ -108,7 +83,7 @@ env = "DEV"
 # The features to use when compiling the bin target
 #
 # Optional. Can be over-ridden with the command line parameter --bin-features
-bin-features = []
+bin-features = ["ssr"]
 
 # If the --no-default-features flag should be used when compiling the bin target
 #
@@ -118,7 +93,7 @@ bin-default-features = false
 # The features to use when compiling the lib target
 #
 # Optional. Can be over-ridden with the command line parameter --lib-features
-lib-features = []
+lib-features = ["hydrate"]
 
 # If the --no-default-features flag should be used when compiling the lib target
 #

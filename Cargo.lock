@@ -64,25 +64,29 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f538837af36e6f6a9be0faa67f9a314f8119e4e4b5867c6ab40ed60360142519"
 
 [[package]]
+name = "app"
+version = "0.1.0"
+dependencies = [
+ "bevy",
+ "http 1.1.0",
+ "leptos",
+ "leptos_axum",
+ "leptos_meta",
+ "leptos_router",
+ "thiserror",
+ "tracing",
+]
+
+[[package]]
 name = "async-bevy-web"
 version = "0.1.0"
-source = "git+https://github.com/vertec-io/async_bevy_web?branch=main#0f68c4b9775bc75a154424d1d289294b2943137e"
+source = "git+https://github.com/vertec-io/async_bevy_web?branch=main#09a14e68e76b3b127c81cac37fe15041d6315fc4"
 dependencies = [
- "axum",
  "bevy",
  "bevy-tokio-tasks",
  "bevy_framepace",
- "leptos",
- "leptos_axum",
- "leptos_router",
  "serde",
  "serde_json",
- "tokio",
- "tokio-tungstenite",
- "tower",
- "tower-http",
- "tracing",
- "tracing-subscriber",
  "web-server",
 ]
 
@@ -297,7 +301,7 @@ dependencies = [
 [[package]]
 name = "bevy-tokio-tasks"
 version = "0.13.0"
-source = "git+https://github.com/vertec-io/async_bevy_web?branch=main#0f68c4b9775bc75a154424d1d289294b2943137e"
+source = "git+https://github.com/vertec-io/async_bevy_web?branch=main#09a14e68e76b3b127c81cac37fe15041d6315fc4"
 dependencies = [
  "bevy_app",
  "bevy_ecs",
@@ -409,7 +413,7 @@ dependencies = [
 [[package]]
 name = "bevy_framepace"
 version = "0.15.0"
-source = "git+https://github.com/vertec-io/async_bevy_web?branch=main#0f68c4b9775bc75a154424d1d289294b2943137e"
+source = "git+https://github.com/vertec-io/async_bevy_web?branch=main#09a14e68e76b3b127c81cac37fe15041d6315fc4"
 dependencies = [
  "bevy_app",
  "bevy_diagnostic",
@@ -1027,27 +1031,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "example-abw-app"
-version = "0.1.0"
-dependencies = [
- "async-bevy-web",
- "axum",
- "bevy",
- "console_error_panic_hook",
- "http 1.1.0",
- "leptos",
- "leptos_axum",
- "leptos_meta",
- "leptos_router",
- "thiserror",
- "tokio",
- "tower",
- "tower-http",
- "tracing",
- "wasm-bindgen",
-]
-
-[[package]]
 name = "fastrand"
 version = "2.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1072,6 +1055,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e13624c2627564efccf4934284bdd98cbaa14e79b0b5a141218e507b3a823456"
 dependencies = [
  "percent-encoding",
+]
+
+[[package]]
+name = "frontend"
+version = "0.1.0"
+dependencies = [
+ "app",
+ "console_error_panic_hook",
+ "leptos",
+ "wasm-bindgen",
 ]
 
 [[package]]
@@ -1502,6 +1495,8 @@ dependencies = [
  "leptos_macro",
  "leptos_reactive",
  "leptos_server",
+ "serde",
+ "serde_json",
  "server_fn",
  "tracing",
  "typed-builder",
@@ -1760,6 +1755,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a4a83fb7698b3643a0e34f9ae6f2e8f0178c0fd42f8b59d493aa271ff3a5bf21"
 dependencies = [
  "hashbrown 0.14.3",
+]
+
+[[package]]
+name = "main"
+version = "0.1.0"
+dependencies = [
+ "app",
+ "async-bevy-web",
+ "bevy",
+ "console_error_panic_hook",
+ "leptos",
 ]
 
 [[package]]
@@ -3111,7 +3117,7 @@ dependencies = [
 [[package]]
 name = "web-server"
 version = "0.1.0"
-source = "git+https://github.com/vertec-io/async_bevy_web?branch=main#0f68c4b9775bc75a154424d1d289294b2943137e"
+source = "git+https://github.com/vertec-io/async_bevy_web?branch=main#09a14e68e76b3b127c81cac37fe15041d6315fc4"
 dependencies = [
  "axum",
  "axum-extra",
@@ -3123,6 +3129,7 @@ dependencies = [
  "headers",
  "leptos",
  "leptos_axum",
+ "leptos_meta",
  "leptos_router",
  "tokio",
  "tokio-tungstenite",

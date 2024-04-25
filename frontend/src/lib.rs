@@ -1,5 +1,5 @@
-pub mod app;
-pub mod error_template;
+pub use app;
+pub use app::error_template::*;
 #[cfg(feature = "ssr")]
 pub mod fileserv;
 
